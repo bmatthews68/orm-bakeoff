@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL MAP 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="Post">
+
+	<resultMap id="PostResultMap" class="com.btmatthews.orm.blog.ibatis.Post" groupBy="id,title,body">
+		<result property="id" column="POST_ID" />
+		<result property="title" column="POST_TITLE" />
+        <result property="body" column="POST_BODY" />
+		<result property="tags" resultMap="Post.PostTagResultMap" />
+	</resultMap>
+	
+	<resultMap id="PostTagResultMap" class="java.lang.String">
+		<result property="tag" column="TAG_VALUE" />
+	</resultMap>
+	
+	<select id="getAll" resultMap="PostResultMap">
+		SELECT * 
+		FROM POSTS LEFT JOIN POST_TAGS ON POSTS.POST_ID = POST_TAGS.POST_ID
+	</select>
+
+</sqlMap>

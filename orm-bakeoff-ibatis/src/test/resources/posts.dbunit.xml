@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<table name="posts">
+		<column>post_id</column>
+		<column>post_title</column>
+        <column>post_body</column>
+		<row>
+			<value>8809f480-b56e-11e2-9e96-0800200c9a66</value>
+			<value>Aliquam in diam non lacus.</value>
+            <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nulla massa, sagittis sit amet adipiscing non, adipiscing in velit. Ut placerat neque rhoncus lacus bibendum luctus. Pellentesque consectetur tristique placerat. Praesent ut sapien lectus. Cum sociis natoque penatibus et magnis.</value>
+		</row>
+		<row>
+			<value>8809f481-b56e-11e2-9e96-0800200c9a66</value>
+			<value>Quisque a ipsum id felis.</value>
+            <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget velit non nisi faucibus elementum. Vivamus eu velit at mauris iaculis venenatis. Duis nec velit dolor, id gravida orci. Quisque sem mauris, porttitor vel pharetra in, hendrerit vel lacus. Integer.</value>
+		</row>
+		<row>
+			<value>8809f482-b56e-11e2-9e96-0800200c9a66</value>
+			<value>Cras egestas, est quis varius.</value>
+            <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in ligula ac massa suscipit commodo. Quisque elit mi, cursus at tempus et, laoreet vel enim. Integer non urna suscipit magna molestie tempus. Ut leo massa, ornare nec vulputate sed, interdum.</value>
+		</row>
+	</table>
+
+	<table name="post_tags">
+		<column>post_id</column>
+		<column>tag_value</column>
+		<row>
+			<value>8809f481-b56e-11e2-9e96-0800200c9a66</value>
+			<value>java</value>
+		</row>
+		<row>
+			<value>8809f482-b56e-11e2-9e96-0800200c9a66</value>
+			<value>java</value>
+		</row>
+		<row>
+			<value>8809f482-b56e-11e2-9e96-0800200c9a66</value>
+			<value>maven</value>
+		</row>
+	</table>
+
+</dataset>
